@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Mon Dec 10 13:24:05 2018
+# Process ID: 8596
+# Current directory: Z:/final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11768 Z:\final\final.xpr
+# Log file: Z:/final/vivado.log
+# Journal file: Z:/final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project Z:/final/final.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {Z:/final/final.runs/impl_1/vga_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
