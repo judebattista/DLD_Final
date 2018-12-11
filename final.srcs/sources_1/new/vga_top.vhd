@@ -1,4 +1,8 @@
--- Listing 13.3
+--  vga_top is responsible for all the output to the screen
+--  It integrates the output from the comparator with the user input via switches and buttons
+--  then displays the user's guess and whether that guess is too high, too low, or on target
+
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;

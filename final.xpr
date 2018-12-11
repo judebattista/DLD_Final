@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="Z:/final/final.xpr">
+<Project Version="7" Minor="38" Path="Z:/CS-373-1/final/final.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="8696b6c5c6a94acd944bcd8c609fbdb4"/>
@@ -68,7 +68,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="//cs1/2020/kcunningham20/CS-373-1/New_Final/final/final.srcs/sources_1/new/reg8bit.vhd">
+      <File Path="$PSRCDIR/sources_1/new/reg8bit.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -94,7 +94,7 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
-      <File Path="C:/Users/kcunningham20/Desktop/Nexys4DDR_Master.xdc">
+      <File Path="$PPRDIR/Nexys4DDR_Master.xdc">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

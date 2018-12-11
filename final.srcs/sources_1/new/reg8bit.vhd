@@ -1,3 +1,7 @@
+--  Reg8bit provides a register to store up to 8 bits of binary data
+--  It stores the data incoming over inp0 when it receives the load signal and clears the stored data when it receives the clr signal
+--  It outputs the stored data via q0
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
@@ -11,6 +15,8 @@ entity reg8bit is
         );
 end reg8bit;
 
+-- When clr is true, set the stored data to zero
+-- Otherwise, on the rising edge of the clock, if load is true, store the data incoming over inp0
 architecture Behavioral of reg8bit is
 
 begin

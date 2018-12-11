@@ -1,0 +1,449 @@
+/*
+
+Xilinx Vivado v2018.2.1 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2288692 on Thu Jul 26 18:24:02 MDT 2018
+IP Build: 2289599 on Thu Jul 26 21:09:20 MDT 2018
+
+Process ID: 7200
+License: Customer
+
+Current time: 	Mon Dec 10 15:45:17 PST 2018
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 173 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	jbattista20
+User home directory: C:/Users/jbattista20
+User working directory: Z:/CS-373-1/final
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/jbattista20/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/jbattista20/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/jbattista20/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	Z:/CS-373-1/final/vivado.log
+Vivado journal file location: 	Z:/CS-373-1/final/vivado.jou
+Engine tmp dir: 	Z:/CS-373-1/final/.Xil/Vivado-7200-LAB-SCI-214-08
+
+Xilinx Environment Variables
+----------------------------
+VK_SDK_PATH: C:\Dev\1.1.77.0
+VULKAN_SDK: C:\Dev\1.1.77.0
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	206 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 545 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: Z:\CS-373-1\final\final.xpr. Version: Vivado v2018.2.1 
+// [GUI Memory]: 64 MB (+64810kb) [00:00:05]
+// [Engine Memory]: 502 MB (+374934kb) [00:00:05]
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project Z:/CS-373-1/final/final.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project Z:/CS-373-1/final/final.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'Z:/final' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 68 MB (+1071kb) [00:00:10]
+// [Engine Memory]: 576 MB (+51063kb) [00:00:10]
+// [GUI Memory]: 75 MB (+3796kb) [00:00:11]
+// [Engine Memory]: 610 MB (+5192kb) [00:00:11]
+// HMemoryUtils.trashcanNow. Engine heap size: 615 MB. GUI used memory: 38 MB. Current time: 12/10/18 3:45:22 PM PST
+// Project name: final; location: Z:/CS-373-1/final; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 908.625 ; gain = 145.551 
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// a (ck): Critical Messages: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 21 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 3); // B (D, ck)
+// [GUI Memory]: 80 MB (+254kb) [00:00:43]
+// [GUI Memory]: 95 MB (+12056kb) [00:00:47]
+// [GUI Memory]: 101 MB (+1111kb) [00:01:11]
+// Elapsed time: 37 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 4, true, false, false, false, true, false); // B (D, ck) - Popup Trigger - Node
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 641 MB. GUI used memory: 51 MB. Current time: 12/10/18 3:46:29 PM PST
+// [Engine Memory]: 641 MB (+1202kb) [00:01:20]
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectTable(PAResourceAtoD.ConstraintsChooserPanel_FILE_TABLE, "Nexys4DDR_Master.xdc ; C:\\Users\\kcunningham20\\Desktop", 0, "Nexys4DDR_Master.xdc", 0, false, false, false, true, false); // s (O, c) - Popup Trigger
+selectTable(PAResourceAtoD.ConstraintsChooserPanel_FILE_TABLE, "Nexys4DDR_Master.xdc ; C:\\Users\\kcunningham20\\Desktop", 0, "Nexys4DDR_Master.xdc", 0, false, false, false, true, false); // s (O, c) - Popup Trigger
+selectMenu(PAResourceAtoD.ConstraintsChooserPanel_ADD_EXISTING_OR_CREATE_NEW_CONSTRAINTS, "Add"); // aa (aj, c)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files"); // a (C, c)
+setFileChooser("Z:/CS-373-1/final/final.srcs/constraints_1/Nexys4DDR_Master.xdc");
+selectCheckBox(PAResourceAtoD.ConstraintsChooserPanel_COPY_CONSTRAINTS_FILES_INTO_PROJECT, "Copy constraints files into project", true); // g (h, c): TRUE
+selectButton("CANCEL", "Cancel"); // JButton (j, c)
+// 'h' command handler elapsed time: 23 seconds
+dismissDialog("Add Sources"); // c (ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 3, true, false, false, false, true, false); // B (D, ck) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files"); // a (C, c)
+// Elapsed time: 25 seconds
+setFileChooser("Z:/CS-373-1/final/Nexys4DDR_Master.xdc");
+// Tcl Command: 'file mkdir C:/Users/kcunningham20/Desktop'
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 38 seconds
+// Tcl Command: 'file mkdir C:/Users/kcunningham20/Desktop'
+// Tcl Message: file mkdir C:/Users/kcunningham20/Desktop 
+// Tcl Message: can't create directory "C:/Users/kcunningham20": permission denied 
+dismissDialog("Add Sources"); // c (ck)
+// Tcl Message: file mkdir C:/Users/kcunningham20/Desktop 
+// Tcl Message: can't create directory "C:/Users/kcunningham20": permission denied 
+// Tcl Command: 'file mkdir C:/Users/kcunningham20/Desktop'
+// Tcl Message: file mkdir C:/Users/kcunningham20/Desktop 
+// Tcl Message: can't create directory "C:/Users/kcunningham20": permission denied 
+// Tcl Command: 'file mkdir C:/Users/kcunningham20/Desktop'
+// Tcl Message: file mkdir C:/Users/kcunningham20/Desktop 
+// Tcl Message: can't create directory "C:/Users/kcunningham20": permission denied 
+// Tcl Command: 'file mkdir C:/Users/kcunningham20/Desktop'
+// Tcl Message: file mkdir C:/Users/kcunningham20/Desktop 
+// Tcl Message: can't create directory "C:/Users/kcunningham20": permission denied 
+// Tcl Command: 'file mkdir C:/Users/kcunningham20/Desktop'
+// Tcl Message: file mkdir C:/Users/kcunningham20/Desktop 
+// Tcl Message: can't create directory "C:/Users/kcunningham20": permission denied 
+// Tcl Command: 'file mkdir C:/Users/kcunningham20/Desktop'
+// Tcl Message: file mkdir C:/Users/kcunningham20/Desktop 
+// Tcl Message: can't create directory "C:/Users/kcunningham20": permission denied 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Command: 'file mkdir C:/Users/kcunningham20/Desktop'
+// Tcl Message: add_files -fileset constrs_1 -norecurse Z:/CS-373-1/final/Nexys4DDR_Master.xdc 
+// Tcl Message: file mkdir C:/Users/kcunningham20/Desktop 
+// Tcl Message: can't create directory "C:/Users/kcunningham20": permission denied 
+// Tcl Command: 'file mkdir C:/Users/kcunningham20/Desktop'
+// Tcl Message: file mkdir C:/Users/kcunningham20/Desktop 
+// Tcl Message: can't create directory "C:/Users/kcunningham20": permission denied 
+// Tcl Message: import_files -fileset constrs_1 {C:/Users/kcunningham20/Desktop/Nexys4DDR_Master.xdc Z:/CS-373-1/final/Nexys4DDR_Master.xdc} 
+// Tcl Message: ERROR: [Vivado 12-172] File or Directory 'C:/Users/kcunningham20/Desktop/Nexys4DDR_Master.xdc' does not exist 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado 12-172] File or Directory 'C:/Users/kcunningham20/Desktop/Nexys4DDR_Master.xdc' does not exist  
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys4DDR_Master.xdc]", 5, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+// HMemoryUtils.trashcanNow. Engine heap size: 670 MB. GUI used memory: 53 MB. Current time: 12/10/18 3:47:44 PM PST
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ad (aj, ck)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/kcunningham20/Desktop/Nexys4DDR_Master.xdc] -no_script -reset -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  -fileset constrs_1 C:/Users/kcunningham20/Desktop/Nexys4DDR_Master.xdc 
+// [Engine Memory]: 675 MB (+1799kb) [00:02:38]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys4DDR_Master.xdc]", 5, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys4DDR_Master.xdc]", 5, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("Nexys4DDR_Master.xdc", 1, 179); // ce (w, ck)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 103 seconds
+selectCodeEditor("Nexys4DDR_Master.xdc", 0, 204); // ce (w, ck)
+typeControlKey(null, null, 'z');
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+selectComboBox(PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS, "8", 7); // e (aU, f)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 7 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Dec 10 15:50:11 2018] Launched synth_1... Run output will be captured here: Z:/CS-373-1/final/final.runs/synth_1/runme.log [Mon Dec 10 15:50:11 2018] Launched impl_1... Run output will be captured here: Z:/CS-373-1/final/final.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// Elapsed time: 14 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_top(vga_top) (vga_top.vhd)]", 2); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_top(vga_top) (vga_top.vhd)]", 2, true); // B (D, ck) - Node
+selectCodeEditor("Nexys4DDR_Master.xdc", 800, 60); // ce (w, ck)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STEP_COMPLETED
+// ah (ck): Implementation Failed: addNotify
+// Elapsed time: 47 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+// Elapsed time: 11 seconds
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, false); // g (aQ, ck): FALSE
+// Elapsed time: 21 seconds
+selectCodeEditor("Nexys4DDR_Master.xdc", 301, 71); // ce (w, ck)
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_top(vga_top) (vga_top.vhd)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_top(vga_top) (vga_top.vhd)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_top(vga_top) (vga_top.vhd), bitreg : xil_defaultlib.reg8bit]", 4, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN, "Add or create design sources"); // a (o, c)
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+setFileChooser("Z:/CS-373-1/final/final.srcs/sources_1/new/reg8bit.vhd");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 14 seconds
+dismissDialog("Add Sources"); // c (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse Z:/CS-373-1/final/final.srcs/sources_1/new/reg8bit.vhd 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 106 MB (+95kb) [00:07:18]
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys4DDR_Master.xdc]", 8, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys4DDR_Master.xdc]", 8, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Source File Properties..."); // ad (aj, ck)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+// [GUI Memory]: 112 MB (+870kb) [00:07:24]
+selectCodeEditor("vga_top.vhd", 688, 344); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 9 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Dec 10 15:52:54 2018] Launched synth_1... Run output will be captured here: Z:/CS-373-1/final/final.runs/synth_1/runme.log [Mon Dec 10 15:52:55 2018] Launched impl_1... Run output will be captured here: Z:/CS-373-1/final/final.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Vivado 12-172] File or Directory 'C:/Users/kcunningham20/Desktop/Nexys4DDR_Master.xdc' does not exist. ]", 2, false, false, false, false, true, false); // ah (O, ck) - Popup Trigger
+selectMenu(PAResourceItoN.MsgTreePanel_MESSAGE_SEVERITY, "Message Severity"); // aa (K, Popup.HeavyWeightWindow)
+selectMenu(PAResourceItoN.MsgTreePanel_MESSAGE_SEVERITY, "Message Severity"); // aa (K, Popup.HeavyWeightWindow)
+selectMenu(PAResourceItoN.MsgTreePanel_MESSAGE_SEVERITY, "Message Severity"); // aa (K, Popup.HeavyWeightWindow)
+// Elapsed time: 10 seconds
+selectCodeEditor("vga_top.vhd", 4, 6); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 120, 7); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 98, 52); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 10, 10); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 695 MB. GUI used memory: 59 MB. Current time: 12/10/18 3:53:24 PM PST
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_FAILED
+// Elapsed time: 97 seconds
+selectCodeEditor("vga_top.vhd", 407, 172); // ce (w, ck)
+// ah (ck): Bitstream Generation Failed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ah (ck)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aE (Q, ck)
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys4DDR_Master.xdc]", 8, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys4DDR_Master.xdc]", 8, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("Nexys4DDR_Master.xdc", 540, 297); // ce (w, ck)
+selectCodeEditor("Nexys4DDR_Master.xdc", 6, 27); // ce (w, ck)
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Dec 10 15:55:51 2018] Launched synth_1... Run output will be captured here: Z:/CS-373-1/final/final.runs/synth_1/runme.log [Mon Dec 10 15:55:51 2018] Launched impl_1... Run output will be captured here: Z:/CS-373-1/final/final.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_top.vhd", 2); // k (j, ck)
+selectCodeEditor("vga_top.vhd", 24, 25); // ce (w, ck)
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_top(vga_top) (vga_top.vhd), c1 : comparator(Behavioral) (comparator.vhd)]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_top(vga_top) (vga_top.vhd), c1 : comparator(Behavioral) (comparator.vhd)]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("comparator.vhd", 2, 8); // ce (w, ck)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 69 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_top.vhd", 2); // k (j, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("vga_top.vhd", 672, 44); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_top(vga_top) (vga_top.vhd), vga_sync_unit : vga_sync(arch) (vga_sync_unit.vhd)]", 5, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_top(vga_top) (vga_top.vhd), vga_sync_unit : vga_sync(arch) (vga_sync_unit.vhd)]", 5, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("vga_sync_unit.vhd", 4, 12); // ce (w, ck)
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 14 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN, "Open Implemented Design"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectCodeEditor("vga_sync_unit.vhd", 357, 13); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 52 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 9); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 10); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files]", 11); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, reg8bit.vhd]", 12, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ad (aj, ck)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: export_ip_user_files -of_objects  [get_files //cs1/2020/kcunningham20/CS-373-1/New_Final/final/final.srcs/sources_1/new/reg8bit.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  //cs1/2020/kcunningham20/CS-373-1/New_Final/final/final.srcs/sources_1/new/reg8bit.vhd 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectCodeEditor("vga_sync_unit.vhd", 340, 112); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_sync_unit.vhd", 4); // k (j, ck)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_top(vga_top) (vga_top.vhd), bitreg : reg8bit(Behavioral) (reg8bit.vhd)]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_top(vga_top) (vga_top.vhd), bitreg : reg8bit(Behavioral) (reg8bit.vhd)]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("reg8bit.vhd", 0, 9); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 83 seconds
+selectCodeEditor("reg8bit.vhd", 533, 25); // ce (w, ck)
+// [GUI Memory]: 119 MB (+1302kb) [00:15:52]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 55 seconds
+selectCodeEditor("reg8bit.vhd", 51, 213); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 51 seconds
+selectCodeEditor("reg8bit.vhd", 282, 248); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_top(vga_top) (vga_top.vhd), vga_sync_unit : vga_sync(arch) (vga_sync_unit.vhd)]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_top(vga_top) (vga_top.vhd), vga_sync_unit : vga_sync(arch) (vga_sync_unit.vhd)]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_top(vga_top) (vga_top.vhd), c1 : comparator(Behavioral) (comparator.vhd)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_top(vga_top) (vga_top.vhd), c1 : comparator(Behavioral) (comparator.vhd)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_sync_unit.vhd", 5); // k (j, ck)
+// Elapsed time: 28 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "reg8bit.vhd", 4); // k (j, ck)
+// Elapsed time: 58 seconds
+selectCodeEditor("reg8bit.vhd", 173, 46); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "comparator.vhd", 3); // k (j, ck)
+// Elapsed time: 66 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_top.vhd", 2); // k (j, ck)
+// Elapsed time: 117 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "reg8bit.vhd", 4); // k (j, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_sync_unit.vhd", 5); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "comparator.vhd", 3); // k (j, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_top.vhd", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys4DDR_Master.xdc", 1); // k (j, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ck)
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // J
+// Elapsed time: 40 seconds
+selectCodeEditor("Nexys4DDR_Master.xdc", 411, 90); // ce (w, ck)

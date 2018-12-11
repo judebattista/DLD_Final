@@ -1,3 +1,5 @@
+-- Code from the book and Dr. Jones as documented below
+-- Provides horizontal and vertical VGA synchronization. We used this code as is with no modifications
 -- Listing 12.1
 -- code from http://academic.csuohio.edu/chu_p/rtl/fpga_vhdl.html
 -- Modified by Kent Jones 11/14/2017 for Nexys4 DDR board

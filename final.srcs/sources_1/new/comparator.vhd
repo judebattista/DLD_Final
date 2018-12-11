@@ -1,3 +1,6 @@
+--  Comparator takes two inputs, and decides whether a is greater than, less than, or equal to b
+--  It performs this operation when BTN is held and outputs the result as y
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
