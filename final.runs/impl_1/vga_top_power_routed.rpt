@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date             : Mon Dec 10 16:42:39 2018
+| Date             : Mon Dec 10 16:55:23 2018
 | Host             : LAB-SCI-214-07 running 64-bit major release  (build 9200)
 | Command          : report_power -file vga_top_power_routed.rpt -pb vga_top_power_summary_routed.pb -rpx vga_top_power_routed.rpx
 | Design           : vga_top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 4.830        |
+| Total On-Chip Power (W)  | 4.352        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 4.708        |
-| Device Static (W)        | 0.121        |
+| Dynamic (W)              | 4.234        |
+| Device Static (W)        | 0.118        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 63.0         |
-| Junction Temperature (C) | 47.0         |
+| Max Ambient (C)          | 65.1         |
+| Junction Temperature (C) | 44.9         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,16 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.445 |      262 |       --- |             --- |
-|   LUT as Logic |     0.427 |      165 |     63400 |            0.26 |
+| Slice Logic    |     0.434 |      260 |       --- |             --- |
+|   LUT as Logic |     0.414 |      163 |     63400 |            0.26 |
 |   Register     |     0.010 |       43 |    126800 |            0.03 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
 |   CARRY4       |     0.003 |        2 |     15850 |            0.01 |
+|   F7/F8 Muxes  |    <0.001 |        1 |     63400 |           <0.01 |
 |   Others       |     0.000 |        5 |       --- |             --- |
-| Signals        |     0.672 |      239 |       --- |             --- |
-| I/O            |     3.591 |       51 |       210 |           24.29 |
-| Static Power   |     0.121 |          |           |                 |
-| Total          |     4.830 |          |           |                 |
+| Signals        |     0.618 |      232 |       --- |             --- |
+| I/O            |     3.182 |       51 |       210 |           24.29 |
+| Static Power   |     0.118 |          |           |                 |
+| Total          |     4.352 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +72,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     1.224 |       1.189 |      0.035 |
-| Vccaux    |       1.800 |     0.149 |       0.129 |      0.020 |
-| Vcco33    |       3.300 |     1.000 |       0.996 |      0.004 |
+| Vccint    |       1.000 |     1.156 |       1.124 |      0.032 |
+| Vccaux    |       1.800 |     0.134 |       0.114 |      0.020 |
+| Vcco33    |       3.300 |     0.884 |       0.880 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -138,10 +139,10 @@ Table of Contents
 +-----------------+-----------+
 | Name            | Power (W) |
 +-----------------+-----------+
-| vga_top         |     4.708 |
-|   bitreg        |     0.106 |
-|   c1            |     0.020 |
-|   vga_sync_unit |     0.707 |
+| vga_top         |     4.234 |
+|   bitreg        |     0.100 |
+|   c1            |     0.027 |
+|   vga_sync_unit |     0.646 |
 +-----------------+-----------+
 
 

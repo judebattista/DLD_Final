@@ -201,11 +201,12 @@ qmiddle_yb <= 130;
 qleft_xl <= 500;
 qleft_yt <= 130;
 qleft_xr <= 510;
-qleft_yb <= 210;
+qleft_yb <= 200;
 qbox_xl <= 500;
-qbox_yt <= 220;
-qbox_xr <= 210;
+qbox_yt <= 210;
+qbox_xr <= 510;
 qbox_yb <= 230;
+
 --decimal <= to_integer(unsigned(SW(6 downto 0)));
 
     -- process to generate next colors           
@@ -1040,6 +1041,7 @@ qbox_yb <= 230;
                 green_next <= "0000";   
                 blue_next <= "1111";
             end if;
+        end if;
             
         --guestion mark display
         if (unsigned(pixel_x) > qupper_xl) and (unsigned(pixel_x) < qupper_xr) and
@@ -1073,7 +1075,6 @@ qbox_yb <= 230;
                 green_next <= "0000";   
                 blue_next <= "1111";
         end if;
-    end if;
 end process;
 
    -- generate r,g,b registers

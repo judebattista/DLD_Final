@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date         : Mon Dec 10 16:42:03 2018
+| Date         : Mon Dec 10 16:54:47 2018
 | Host         : LAB-SCI-214-07 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file vga_top_control_sets_placed.rpt
 | Design       : vga_top
@@ -47,11 +47,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              14 |            2 |
+| No           | No                    | No                     |              14 |            3 |
 | No           | No                    | Yes                    |               8 |            3 |
 | No           | Yes                   | No                     |               8 |            2 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |              56 |           12 |
+| Yes          | No                    | Yes                    |              56 |           10 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -64,12 +64,12 @@ Table of Contents
 +----------------------------------------+----------------------------+------------------------------+------------------+----------------+
 |  vga_sync_unit/clk_divider_reg_n_0_[0] |                            | BTN_IBUF[1]                  |                2 |              4 |
 |  CLK100MHZ_IBUF_BUFG                   |                            | BTN_IBUF[1]                  |                1 |              4 |
-|  CLK100MHZ_IBUF_BUFG                   |                            |                              |                1 |              6 |
+|  CLK100MHZ_IBUF_BUFG                   |                            |                              |                2 |              6 |
 |  vga_sync_unit/Q[0]                    |                            |                              |                1 |              8 |
 |  vga_sync_unit/Q[0]                    |                            | vga_sync_unit/red_reg_reg[3] |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG                   | BTN_IBUF[3]                | BTN_IBUF[2]                  |                3 |             16 |
-|  vga_sync_unit/clk_divider_reg_n_0_[0] | vga_sync_unit/Q[0]         | BTN_IBUF[1]                  |                5 |             20 |
+|  CLK100MHZ_IBUF_BUFG                   | BTN_IBUF[3]                | BTN_IBUF[2]                  |                2 |             16 |
 |  vga_sync_unit/clk_divider_reg_n_0_[0] | vga_sync_unit/v_count_reg0 | BTN_IBUF[1]                  |                4 |             20 |
+|  vga_sync_unit/clk_divider_reg_n_0_[0] | vga_sync_unit/Q[0]         | BTN_IBUF[1]                  |                4 |             20 |
 +----------------------------------------+----------------------------+------------------------------+------------------+----------------+
 
 

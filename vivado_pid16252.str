@@ -111,3 +111,18 @@ dismissDialog("Open Project"); // bx (ck)
 // TclEventType: RUN_STEP_COMPLETED
 // TclEventType: RUN_COMPLETED
 // ah (ck): Bitstream Generation Completed: addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_COMPLETED
+// [Engine Memory]: 661 MB (+3177kb) [00:26:50]
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
