@@ -2,11 +2,11 @@
 # Vivado v2018.2.1 (64-bit)
 # SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
 # IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Mon Dec 10 16:53:21 2018
-# Process ID: 13128
-# Current directory: Z:/DLD_Final/final.runs/synth_1
+# Start of session at: Mon Dec 10 17:12:45 2018
+# Process ID: 13716
+# Current directory: Z:/CS-373-1/DLD_Final/final.runs/synth_1
 # Command line: vivado.exe -log vga_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga_top.tcl
-# Log file: Z:/DLD_Final/final.runs/synth_1/vga_top.vds
-# Journal file: Z:/DLD_Final/final.runs/synth_1\vivado.jou
+# Log file: Z:/CS-373-1/DLD_Final/final.runs/synth_1/vga_top.vds
+# Journal file: Z:/CS-373-1/DLD_Final/final.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source vga_top.tcl -notrace

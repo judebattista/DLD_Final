@@ -8,10 +8,13 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity comparator is
   Port (
+        -- a and b are the inputs to compare
         a : in STD_LOGIC_VECTOR(7 downto 0);
         b : in STD_LOGIC_VECTOR(7 downto 0);
+        -- uses a button press and hold to trigger and output the result of the comparison
         BTN: in STD_LOGIC_VECTOR(4 downto 0);
         clk: in STD_LOGIC;
+        -- the result of the comparison
         y: out STD_LOGIC_VECTOR(2 downto 0)
   );
 end comparator;
@@ -22,7 +25,9 @@ signal comparison: STD_LOGIC_VECTOR(7 downto 0);
 
 begin
     comparison <= a-b;
-    
+    -- if a < b output 100.
+    -- if a > b output 010
+    -- if a = b output 001
     process(a, b, clk) 
     begin
         y<= "000";

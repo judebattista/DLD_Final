@@ -19,12 +19,17 @@ entity vga_top is
    );
 end vga_top;
 
+    
     architecture vga_top of vga_top is
+    -- The manifold signals of the monolithic vga_top
+    -- the coordinates of the pixel under consideration
     signal pixel_x, pixel_y: std_logic_vector(9 downto 0);
     signal video_on, pixel_tick: std_logic;
+    -- color values
     signal red_reg, red_next: std_logic_vector(3 downto 0) := (others => '0');
     signal green_reg, green_next: std_logic_vector(3 downto 0) := (others => '0');
-    signal blue_reg, blue_next: std_logic_vector(3 downto 0) := (others => '0');     
+    signal blue_reg, blue_next: std_logic_vector(3 downto 0) := (others => '0');
+    -- signals representing the corners of every box comprising numeric output    
     signal th_xl, th_yt, th_xr, th_yb : integer := 0;
     signal tl_xl, tl_yt, tl_xr, tl_yb : integer := 0; 
     signal tr_xl, tr_yt, tr_xr, tr_yb : integer := 0; 
@@ -32,16 +37,24 @@ end vga_top;
     signal bl_xl, bl_yt, bl_xr, bl_yb : integer := 0; 
     signal br_xl, br_yt, br_xr, br_yb : integer := 0; 
     signal bh_xl, bh_yt, bh_xr, bh_yb : integer := 0; 
+    -- signals representing the corners of the boxes for the comparison operators
     signal eu_xl, eu_yt, eu_xr, eu_yb, el_xl, el_yt, el_xr, el_yb : integer := 0;
     signal lt_first_xl, lt_first_yt, lt_first_xr, lt_first_yb, second_xl, second_yt, second_xr, second_yb, lt_third_xl, lt_third_yt, lt_third_xr, lt_third_yb, fourth_xl, fourth_yt, fourth_xr, fourth_yb, lt_fifth_xl, lt_fifth_yt, lt_fifth_xr, lt_fifth_yb : integer := 0;
     signal gt_first_xl, gt_first_yt, gt_first_xr, gt_first_yb, gt_third_xl, gt_third_yt, gt_third_xr, gt_third_yb, gt_fifth_xl, gt_fifth_yt, gt_fifth_xr, gt_fifth_yb : integer := 0;
+    -- signals representing the corners of the boxes for the question mark
     signal qupper_xl, qupper_yt, qupper_xr, qupper_yb, qright_xl, qright_yt, qright_xr, qright_yb, qmiddle_xl, qmiddle_yt, qmiddle_xr, qmiddle_yb, qleft_xl, qleft_yt, qleft_xr, qleft_yb,qbox_xl, qbox_yt, qbox_xr, qbox_yb : integer := 0;
+    -- output from the register. Gets fed into the comparator
     signal reg_out: STD_LOGIC_VECTOR(7 downto 0);
+    -- second comparator input. Gets mapped to switches
     signal b: STD_LOGIC_VECTOR(7 downto 0);
+    -- comparator output
     signal y: STD_LOGIC_VECTOR(2 downto 0);
+    -- the decimal value of the user's guess
     signal decimal: integer range 0 to 100;
+    -- how far the one's digit display is offset from the ten's digit display
     signal place_value_shift : integer := 130;
-    
+
+-- Implements a comparator component    
 component comparator is
   Port (
         a : in STD_LOGIC_VECTOR(7 downto 0);
@@ -53,6 +66,7 @@ component comparator is
   
 end component;
 
+-- Implement an 8 bit register
 component reg8bit is
 Port (
         load: in STD_LOGIC;
@@ -68,22 +82,26 @@ begin
    
    c1 : comparator
        port map(
+           -- maps one input to the switches
            a => SW(7 downto 0),
-           --b => SW(15 downto 8),
+           -- and the other to the output from the register
            b => reg_out,
            clk=>CLK100MHZ,
            BTN=>BTN,
-           --y => LED(2 downto 0)
+           -- maps the output to our y signal
            y => y
        );
        
        bitreg: reg8bit
        port map(
+           -- maps the upper tier of switches to the value to store in the register
            inp0 => SW(15 downto 8),
+           -- the right button will store the input in the register
            load => BTN(3),
            clk => CLK100MHZ,
+           -- the left button will clear the register
            clr => BTN(2),
-           --q0 => LED(15 downto 8)
+           -- output the stored value to the reg_out signal
            q0 => reg_out
        );
        
@@ -93,7 +111,7 @@ begin
                pixel_x=>pixel_x, pixel_y=>pixel_y,
                p_tick=>pixel_tick);
                
-    -- box position
+-- box positions for VGA output
 -- top horizontal
 th_xl <= 10;
 th_yt <= 0;
@@ -206,8 +224,6 @@ qbox_xl <= 500;
 qbox_yt <= 210;
 qbox_xr <= 510;
 qbox_yb <= 230;
-
---decimal <= to_integer(unsigned(SW(6 downto 0)));
 
     -- process to generate next colors           
     process (pixel_x, pixel_y, SW)
@@ -1077,6 +1093,7 @@ qbox_yb <= 230;
         end if;
 end process;
 
+ 
    -- generate r,g,b registers
    process ( video_on, pixel_tick, red_next, green_next, blue_next)
    begin

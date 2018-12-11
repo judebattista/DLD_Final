@@ -7,10 +7,14 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity reg8bit is
   Port (
+        -- load triggers the register to store the current input
         load: in STD_LOGIC;
+        -- the current input
         inp0: in STD_LOGIC_VECTOR(7 downto 0);
         clk: in STD_LOGIC;
+        -- clr replaces the contents of the register with zeroes
         clr: in STD_LOGIC;
+        -- the value currently stored in the register
         q0: out STD_LOGIC_VECTOR(7 downto 0)
         );
 end reg8bit;
