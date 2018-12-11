@@ -22,18 +22,18 @@ create_project -in_memory -part xc7a100tcsg324-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir Z:/CS-373-1/final/final.cache/wt [current_project]
-set_property parent.project_path Z:/CS-373-1/final/final.xpr [current_project]
+set_property webtalk.parent_dir Z:/DLD_Final/final.cache/wt [current_project]
+set_property parent.project_path Z:/DLD_Final/final.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
-set_property ip_output_repo z:/CS-373-1/final/final.cache/ip [current_project]
+set_property ip_output_repo z:/DLD_Final/final.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  Z:/CS-373-1/final/final.srcs/sources_1/new/comparator.vhd
-  Z:/CS-373-1/final/final.srcs/sources_1/new/reg8bit.vhd
-  Z:/CS-373-1/final/final.srcs/sources_1/new/vga_sync_unit.vhd
-  Z:/CS-373-1/final/final.srcs/sources_1/new/vga_top.vhd
+  Z:/DLD_Final/final.srcs/sources_1/new/comparator.vhd
+  Z:/DLD_Final/final.srcs/sources_1/new/reg8bit.vhd
+  Z:/DLD_Final/final.srcs/sources_1/new/vga_sync_unit.vhd
+  Z:/DLD_Final/final.srcs/sources_1/new/vga_top.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -43,8 +43,8 @@ read_vhdl -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc Z:/CS-373-1/final/Nexys4DDR_Master.xdc
-set_property used_in_implementation false [get_files Z:/CS-373-1/final/Nexys4DDR_Master.xdc]
+read_xdc Z:/DLD_Final/Nexys4DDR_Master.xdc
+set_property used_in_implementation false [get_files Z:/DLD_Final/Nexys4DDR_Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]

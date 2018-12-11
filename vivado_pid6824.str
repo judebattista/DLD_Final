@@ -1,0 +1,595 @@
+/*
+
+Xilinx Vivado v2018.2.1 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2288692 on Thu Jul 26 18:24:02 MDT 2018
+IP Build: 2289599 on Thu Jul 26 21:09:20 MDT 2018
+
+Process ID: 6824
+License: Customer
+
+Current time: 	Mon Dec 10 16:23:16 PST 2018
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 158 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	kcunningham20
+User home directory: C:/Users/kcunningham20
+User working directory: Z:/DLD_Final
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/kcunningham20/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/kcunningham20/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/kcunningham20/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	Z:/DLD_Final/vivado.log
+Vivado journal file location: 	Z:/DLD_Final/vivado.jou
+Engine tmp dir: 	Z:/DLD_Final/.Xil/Vivado-6824-LAB-SCI-214-07
+
+Xilinx Environment Variables
+----------------------------
+VK_SDK_PATH: C:\Dev\1.1.77.0
+VULKAN_SDK: C:\Dev\1.1.77.0
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	175 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 525 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: Z:\DLD_Final\final.xpr. Version: Vivado v2018.2.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [GUI Memory]: 58 MB (+58229kb) [00:00:07]
+// [Engine Memory]: 479 MB (+350722kb) [00:00:07]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project Z:/DLD_Final/final.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'Z:/CS-373-1/final' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 82 MB (+22116kb) [00:00:10]
+// [Engine Memory]: 560 MB (+59569kb) [00:00:10]
+// [GUI Memory]: 95 MB (+9401kb) [00:00:10]
+// [GUI Memory]: 108 MB (+8213kb) [00:00:12]
+// [Engine Memory]: 626 MB (+40129kb) [00:00:12]
+// [GUI Memory]: 117 MB (+4153kb) [00:00:12]
+// HMemoryUtils.trashcanNow. Engine heap size: 648 MB. GUI used memory: 43 MB. Current time: 12/10/18 4:23:20 PM PST
+// Tcl Message: open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 788.441 ; gain = 81.066 
+// Project name: final; location: Z:/DLD_Final; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_top(vga_top) (vga_top.vhd)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_top(vga_top) (vga_top.vhd)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("vga_top.vhd", 23, 231); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 30, 230); // ce (w, ck)
+// Elapsed time: 53 seconds
+selectCodeEditor("vga_top.vhd", 80, 59); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 246, 156); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 120, 227); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 79, 63); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 181, 235); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 99, 229); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 95, 232); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 94, 235); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 169, 229); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 155, 234); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 244, 228); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 322, 226); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 377, 229); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 399, 224); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 417, 231); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 422, 230); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 456, 231); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 532, 230); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 611, 227); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 678, 232); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("vga_top.vhd", 77, 230); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 741, 229); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 176, 230); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 279, 231); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 330, 231); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 409, 231); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 482, 231); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 561, 231); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 554, 231); // ce (w, ck)
+// [Engine Memory]: 661 MB (+3739kb) [00:02:42]
+selectCodeEditor("vga_top.vhd", 603, 232); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 635, 232); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 716, 232); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 806, 233); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 880, 231); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 964, 231); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 923, 278); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 560, 232); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 655, 227); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 750, 227); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 819, 223); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 901, 227); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 795, 227); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 795, 227, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("vga_top.vhd", 814, 234); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 821, 236); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 804, 232); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 878, 231); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 937, 233); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 942, 235); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 902, 235); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 941, 223); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 1004, 232); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 1040, 228); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 710, 260); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 126, 231); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("vga_top.vhd", 671, 229); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 777, 287); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 920, 231); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 927, 230); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 408, 318); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 208, 321); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 12, 321); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 76, 349); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 668 MB. GUI used memory: 45 MB. Current time: 12/10/18 4:27:23 PM PST
+// Elapsed time: 15 seconds
+selectCodeEditor("vga_top.vhd", 74, 381); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 74, 376); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 72, 367); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 72, 351); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 96, 409); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 79, 345); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 64, 400); // ce (w, ck)
+// Elapsed time: 43 seconds
+selectCodeEditor("vga_top.vhd", 200, 424); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 128, 242); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 105, 217); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 119, 230); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("vga_top.vhd", 86, 179); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 76, 205); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 81, 231); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 77, 246); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 77, 263); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 79, 280); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 85, 296); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 89, 312); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 92, 330); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 97, 350); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 98, 361); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 77, 391); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 77, 386); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 83, 413); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 84, 435); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 109, 191); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 94, 184); // ce (w, ck)
+// Elapsed time: 222 seconds
+selectCodeEditor("vga_top.vhd", 69, 226); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 67, 248); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 98, 267); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 76, 251); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 66, 262); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 126, 263); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 126, 263); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 69, 282); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 69, 282, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 96, 295); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 83, 315); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 63, 320); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 67, 329); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 62, 314); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 62, 332); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 62, 351); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 65, 363); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 73, 366); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 70, 366); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 66, 382); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 67, 382); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 68, 396); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 68, 417); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 50, 435); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 47, 451); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 53, 465); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 112, 482); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 205, 326); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 102, 326); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 102, 326, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("vga_top.vhd", 101, 349); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 101, 349, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("vga_top.vhd", 105, 382); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 105, 382, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("vga_top.vhd", 105, 362); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 105, 362, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("vga_top.vhd", 104, 402); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 104, 402, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("vga_top.vhd", 112, 418); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 112, 418, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("vga_top.vhd", 104, 349); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 104, 349, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("vga_top.vhd", 109, 335); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 109, 335, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("vga_top.vhd", 110, 363); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 110, 363, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("vga_top.vhd", 84, 379); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 83, 378, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("vga_top.vhd", 1, 194); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 128, 319); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 33, 339); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 42, 336); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 41, 354); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 38, 366); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 45, 385); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 232, 352); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 73, 333); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 87, 326); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 87, 326, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("vga_top.vhd", 104, 330); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 104, 330, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("vga_top.vhd", 91, 350); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 91, 350, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("vga_top.vhd", 94, 384); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 94, 384, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("vga_top.vhd", 243, 387); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 151, 362); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 101, 365); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 93, 367); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 93, 367, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("vga_top.vhd", 134, 356); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 91, 374); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 90, 368); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 90, 368, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("vga_top.vhd", 231, 365); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 93, 378); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 93, 378, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("vga_top.vhd", 123, 424); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 76, 401); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 76, 401, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("vga_top.vhd", 94, 401); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 94, 401, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("vga_top.vhd", 87, 419); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 87, 419, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("vga_top.vhd", 86, 456); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 86, 456, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("vga_top.vhd", 82, 411); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 82, 411, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("vga_top.vhd", 87, 397); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 87, 397, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("vga_top.vhd", 95, 436); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 95, 436, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("vga_top.vhd", 273, 330); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 444, 385); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 194, 385); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 741, 411); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 684, 385); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 564, 384); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 569, 380); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 600, 384); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 676, 385); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 745, 388); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 812, 381); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 22 seconds
+selectCodeEditor("vga_top.vhd", 153, 377); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("vga_top.vhd", 85, 177); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 275, 285); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 81, 75); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 537, 403); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 52, 227); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 263, 480); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 340, 341); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 3, 233); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("vga_top.vhd", 153, 275); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 142, 267); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 58, 318); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 56, 282); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 308, 332); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 56, 360); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 217, 389); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 230, 375); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 210, 385); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 207, 336); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 231, 437); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 60, 266); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 57, 267, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("vga_top.vhd", 77, 258); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 89, 264); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 59, 361); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 56, 164); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 338, 224); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 106, 263); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 264, 318); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 222, 249); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 108, 237); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("vga_top.vhd", 264, 165); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 224, 156); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 531, 162); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 542, 175); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 544, 180); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 275, 178); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 279, 180); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 256, 218); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 256, 218, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("vga_top.vhd", 281, 212); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 288, 214); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 286, 211); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 540, 215); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 539, 229); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 290, 231); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 301, 313); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 277, 266); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 287, 314); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 531, 314); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 542, 334); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 506, 332); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 287, 331); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 277, 213); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 290, 214); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 562, 216); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 568, 228); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 300, 228); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 434, 282); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 543, 208); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 588, 272); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 284, 229); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 546, 229); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 505, 294); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 305, 316); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 244, 315); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 481, 317); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 511, 335); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 247, 334); // ce (w, ck)
+typeControlKey((HResource) null, "vga_top.vhd", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("vga_top.vhd", 413, 352); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+// Elapsed time: 23 seconds
+selectComboBox(PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS, "8", 7); // e (aU, f)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 24 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Dec 10 16:40:29 2018] Launched synth_1... Run output will be captured here: Z:/DLD_Final/final.runs/synth_1/runme.log [Mon Dec 10 16:40:29 2018] Launched impl_1... Run output will be captured here: Z:/DLD_Final/final.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 690 MB. GUI used memory: 47 MB. Current time: 12/10/18 4:40:33 PM PST
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 207ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 151 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bx (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cM, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// [Engine Memory]: 696 MB (+1745kb) [00:19:58]
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.2.1   **** Build date : Jul 26 2018-19:38:10     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// [Engine Memory]: 1,346 MB (+645900kb) [00:20:04]
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A4BEB9A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {Z:/DLD_Final/final.runs/impl_1/vga_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bx (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,350 MB. GUI used memory: 51 MB. Current time: 12/10/18 4:43:13 PM PST
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {Z:/DLD_Final/final.runs/impl_1/vga_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 46 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (ay, ck)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (ck): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+dismissDialog("Confirm Close"); // A (ck)
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+// bx (ck):  CLose Hardware Manager : addNotify
+dismissDialog("CLose Hardware Manager"); // bx (ck)
+selectCodeEditor("vga_top.vhd", 105, 188); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 400, 288); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("vga_top.vhd", 135, 369); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("vga_top.vhd", 311, 174); // ce (w, ck)
+selectCodeEditor("vga_top.vhd", 312, 200); // ce (w, ck)

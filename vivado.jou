@@ -2,39 +2,28 @@
 # Vivado v2018.2.1 (64-bit)
 # SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
 # IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Mon Dec 10 15:45:05 2018
-# Process ID: 7200
-# Current directory: Z:/CS-373-1/final
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10252 Z:\CS-373-1\final\final.xpr
-# Log file: Z:/CS-373-1/final/vivado.log
-# Journal file: Z:/CS-373-1/final\vivado.jou
+# Start of session at: Mon Dec 10 16:23:01 2018
+# Process ID: 6824
+# Current directory: Z:/DLD_Final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14976 Z:\DLD_Final\final.xpr
+# Log file: Z:/DLD_Final/vivado.log
+# Journal file: Z:/DLD_Final\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project Z:/CS-373-1/final/final.xpr
-update_compile_order -fileset sources_1
-file mkdir C:/Users/kcunningham20/Desktop
-file mkdir C:/Users/kcunningham20/Desktop
-file mkdir C:/Users/kcunningham20/Desktop
-file mkdir C:/Users/kcunningham20/Desktop
-file mkdir C:/Users/kcunningham20/Desktop
-file mkdir C:/Users/kcunningham20/Desktop
-file mkdir C:/Users/kcunningham20/Desktop
-add_files -fileset constrs_1 -norecurse Z:/CS-373-1/final/Nexys4DDR_Master.xdc
-file mkdir C:/Users/kcunningham20/Desktop
-file mkdir C:/Users/kcunningham20/Desktop
-import_files -fileset constrs_1 {C:/Users/kcunningham20/Desktop/Nexys4DDR_Master.xdc Z:/CS-373-1/final/Nexys4DDR_Master.xdc}
-export_ip_user_files -of_objects  [get_files C:/Users/kcunningham20/Desktop/Nexys4DDR_Master.xdc] -no_script -reset -force -quiet
-remove_files  -fileset constrs_1 C:/Users/kcunningham20/Desktop/Nexys4DDR_Master.xdc
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-add_files -norecurse Z:/CS-373-1/final/final.srcs/sources_1/new/reg8bit.vhd
+open_project Z:/DLD_Final/final.xpr
 update_compile_order -fileset sources_1
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 8
 wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-export_ip_user_files -of_objects  [get_files //cs1/2020/kcunningham20/CS-373-1/New_Final/final/final.srcs/sources_1/new/reg8bit.vhd] -no_script -reset -force -quiet
-remove_files  //cs1/2020/kcunningham20/CS-373-1/New_Final/final/final.srcs/sources_1/new/reg8bit.vhd
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {Z:/DLD_Final/final.runs/impl_1/vga_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {Z:/DLD_Final/final.runs/impl_1/vga_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw

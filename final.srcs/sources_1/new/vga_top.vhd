@@ -35,6 +35,7 @@ end vga_top;
     signal eu_xl, eu_yt, eu_xr, eu_yb, el_xl, el_yt, el_xr, el_yb : integer := 0;
     signal lt_first_xl, lt_first_yt, lt_first_xr, lt_first_yb, second_xl, second_yt, second_xr, second_yb, lt_third_xl, lt_third_yt, lt_third_xr, lt_third_yb, fourth_xl, fourth_yt, fourth_xr, fourth_yb, lt_fifth_xl, lt_fifth_yt, lt_fifth_xr, lt_fifth_yb : integer := 0;
     signal gt_first_xl, gt_first_yt, gt_first_xr, gt_first_yb, gt_third_xl, gt_third_yt, gt_third_xr, gt_third_yb, gt_fifth_xl, gt_fifth_yt, gt_fifth_xr, gt_fifth_yb : integer := 0;
+    signal qupper_xl, qupper_yt, qupper_xr, qupper_yb, qright_xl, qright_yt, qright_xr, qright_yb, qmiddle_xl, qmiddle_yt, qmiddle_xr, qmiddle_yb, qleft_xl, qleft_yt, qleft_xr, qleft_yb,qbox_xl, qbox_yt, qbox_xr, qbox_yb : integer := 0;
     signal reg_out: STD_LOGIC_VECTOR(7 downto 0);
     signal b: STD_LOGIC_VECTOR(7 downto 0);
     signal y: STD_LOGIC_VECTOR(2 downto 0);
@@ -184,6 +185,27 @@ gt_fifth_yt <= 160;
 gt_fifth_xr <= 350;
 gt_fifth_yb <= 190;
 
+--question mark
+qupper_xl <= 500;
+qupper_yt <= 10;
+qupper_xr <= 600;
+qupper_yb<= 20;
+qright_xl <= 600;
+qright_yt <= 20;
+qright_xr <= 610;
+qright_yb <= 120;
+qmiddle_xl <= 500;
+qmiddle_yt <= 120;
+qmiddle_xr <= 600;
+qmiddle_yb <= 130;
+qleft_xl <= 500;
+qleft_yt <= 130;
+qleft_xr <= 510;
+qleft_yb <= 210;
+qbox_xl <= 500;
+qbox_yt <= 220;
+qbox_xr <= 210;
+qbox_yb <= 230;
 --decimal <= to_integer(unsigned(SW(6 downto 0)));
 
     -- process to generate next colors           
@@ -1018,6 +1040,39 @@ gt_fifth_yb <= 190;
                 green_next <= "0000";   
                 blue_next <= "1111";
             end if;
+            
+        --guestion mark display
+        if (unsigned(pixel_x) > qupper_xl) and (unsigned(pixel_x) < qupper_xr) and
+           (unsigned(pixel_y) > qupper_yt) and (unsigned(pixel_y) < qupper_yb) then
+                -- number box color blue
+                red_next <= "0000";
+                green_next <= "0000";   
+                blue_next <= "1111";
+        elsif (unsigned(pixel_x) > qright_xl) and (unsigned(pixel_x) < qright_xr) and
+              (unsigned(pixel_y) > qright_yt) and (unsigned(pixel_y) < qright_yb) then
+                -- number box color blue
+                red_next <= "0000";
+                green_next <= "0000";   
+                blue_next <= "1111";
+        elsif (unsigned(pixel_x) > qmiddle_xl) and (unsigned(pixel_x) < qmiddle_xr) and
+              (unsigned(pixel_y) > qmiddle_yt) and (unsigned(pixel_y) < qmiddle_yb) then
+                -- number box color blue
+                red_next <= "0000";
+                green_next <= "0000";   
+                blue_next <= "1111";
+        elsif (unsigned(pixel_x) > qleft_xl) and (unsigned(pixel_x) < qleft_xr) and
+              (unsigned(pixel_y) > qleft_yt) and (unsigned(pixel_y) < qleft_yb) then
+                -- number box color blue
+                red_next <= "0000";
+                green_next <= "0000";   
+                blue_next <= "1111";
+        elsif (unsigned(pixel_x) > qbox_xl) and (unsigned(pixel_x) < qbox_xr) and
+              (unsigned(pixel_y) > qbox_yt) and (unsigned(pixel_y) < qbox_yb) then
+                -- number box color blue
+                red_next <= "0000";
+                green_next <= "0000";   
+                blue_next <= "1111";
+        end if;
     end if;
 end process;
 
